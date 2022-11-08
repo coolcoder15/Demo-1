@@ -1,0 +1,45 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="UTF-8">
+
+<script>function validate(){
+var name1= document.getElementById("name1").value;  var phone1= document.getElementById("phone1").value;  var email1= document.getElementById("email1").value;
+var message1= document.getElementById("message1").value;  if(name1.length<=3)  {     var text="enter a valid name of 4 letter";     errormessage.innerHTML=text;     return false;  }  if(isNaN(phone1)||phone1.length!=10)  {    var text="enter a valid phone number of 10 digits";    errormessage.innerHTML=text;    return false;     }  if(email1.length<6||email1.indexOf("@")==-1)     {     var text="enter a valid email id";     errormessage.innerHTML=text;     return false;
+}  if(message1.length<=15)  {    var text="enter a valid message at least 15 characters";    errormessage.innerHTML=text;    return false;   }  alert("form is submitted successfully");  return true;}</script>
+
+<style>
+.header{background-color:#92E2EC;padding:20px;}
+.h{float: right; text-align: center; padding-right: 500px;}
+th,td{padding:12px 15px}
+tr{border-bottom:1px solid #006064}
+tr:nth-of-type(even){background-color:#EED1FF}
+.footer{text-align:center;background-color:#92E2EC;font-size:20px;padding:10px;color:darkcyan;}
+.container{width:100%;margin:0px;background-color:green;}
+nav{float:right; background-color:#D0AAE2;width:100%}
+nav ul{margin:0px;padding:0px;list-style-type:none}
+nav li{display:inline-block;margin-left:70px;padding-top:23px;position:relative;}
+nav a{color:#c3dff;text-transform:uppercase;font-size:20px;text-decoration:none}
+nav a:hover{color:#01579b}
+nav a::before{content:'';display:block;height:5px;background-color:#01579b;position:absolute;top:0px;width:0%;transition:all ease-in-out 250ms;}
+nav a:hover::before{width:100%}
+</div>
+*{box-sizing:border-box;outline:none;font-family:"Times New Roman";}
+.btn input[type=submit]:hover {  background-color: #251C90;}.wrapper{position:absolute;top:50%;left:50%;transform:translate(-50%,-1%);max-width:360px;width:100%;background-color:#38006b;padding:25px;border-radius:5px;}.wrapper h2{text-align:center;margin-bottom:20px;text-transform:uppercase;letter-spacing:3px;color:lightcoral}.wrapper .inputfield{margin-bottom:10px;}.wrapper .inputfield input[type=text], .wrapper textarea{border:1px solid red;width:80%;padding:10px}.wrapper textarea{resize:none;height:80px;}.wrapper .btn input[type=submit]{border:0px;margin-top:15px;padding:10px;text-align:center;width:100%;background-color:darkgrey;color:white;text-transform:uppercase;letter-spacing:5px;font-weight:bold;border-radius:25px;cursor:pointer;}#error_message{margin-bottom:20px;background:#fe8b8e;padding:0px;text-align:center;font-size:14px;transition:all 0.5s ease;}body{background-color:#B18BC9;}</style>
+
+<body>
+<div class= header>
+<img src= "Travel.jpg" height="150" width="300" align="center">
+<h1 class=h>Let's Travel</h1>
+</div>
+
+<div class=container>
+<nav>
+<ul>
+<li><a href="W2 Index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Hotels.html">Hotels</a></li>
+<li><a href="W2 Contact Form.html">Contact Us!</a></li>
+</ul>
+</nav>
+</div>
+<div class=wrapper><h2>contact us<h2><form id=myform onsubmit="return validate();" method=post action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYaZERyo5iiHx-SeVpNGTuG9xv2MvKFFQWaPjVB-9dNbNEkg/formResponse"><div class=inputfield><input type = "text" placeholder = "Name" id = "name1" name = "entry.210588464"></div><div class=inputfield><input type = "text" placeholder = "Phone no" id = "phone1" name = "entry.701721830"></div><div class=inputfield><input type = "text" placeholder = "Email" id = "email1" name = "entry.1028684757"></div><div class=inputfield><textarea placeholder = "Message" id = "message1" name = "entry.1756023739"></textarea></div><div class= btn><input type=submit></div></form><div id="errormessage"></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class= footer><p>To know more about London visit <a href="https://www.britannica.com/place/London">information about London</a></p></div></body></html>
